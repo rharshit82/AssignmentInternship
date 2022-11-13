@@ -1,0 +1,36 @@
+.property .text {
+  padding: 30px;
+}
+.property .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.property .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+.property p {
+  color: #72809d;
+}
+.property .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px;
+}
+.pricediv{
+  margin-left: 2rem;
+}
+
+  .price{
+    color: #6E65F2;
+    font-weight: 600;
+  }
+.heart{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.singleCard{
+  background-color: white;
+}
