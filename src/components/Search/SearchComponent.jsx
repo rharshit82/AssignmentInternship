@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { search } from '../../store/actions/action'
 const SearchComponent = () => {
   const history = useHistory();
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState("Delhi");
   const dispatch = useDispatch();
   const [date, setDate] = useState(null);
   const [price, setPrice] = useState("<0-1000");
@@ -34,12 +34,17 @@ const SearchComponent = () => {
           <form className="flex">
             <div className="box">
               <span>Location</span>
-              <input
+              <select
                 type="text"
                 required
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="Location"
-              />
+              >
+                 <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Chennai">Chennai</option>
+                </select>
             </div>
             <div className="box">
               <span>When To Move</span>
